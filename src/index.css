@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+.card {
+  translate: -50%, -50%;
+  border-radius: 20px;
+  margin: auto;
+  position: absolute;
+}
+
+.swiper {
+  width: 100%;
+  height: 100% ;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 100% !important;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100% !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: black;
+  color: black;
+}
+
+.swiperItem{
+  height: 90px !important;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordion-content {
+  padding: 10px;
+}
+
+.accordion-content.expanded {
+  height: auto; /* Set to auto when expanded */
+  padding-top: 10px; /* Adjust padding when expanded */
+  padding-bottom: 10px; /* Adjust padding when expanded */
+}
+
+.accordion-content:not(.expanded) {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
