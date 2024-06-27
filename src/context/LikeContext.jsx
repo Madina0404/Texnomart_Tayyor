@@ -13,9 +13,9 @@ const LikeProvider = ({ children }) => {
     }
   });
 
-  const addLike = (card) => {
-    if (!like.some((item) => item.id === card.id)) {
-      setLike([...like, card]);
+  const addLike = (product) => {
+    if (!like.some((item) => item.id === product.id)) {
+      setBasket([...like, product]);
     }
   };
   const removeLike = (id)=>{

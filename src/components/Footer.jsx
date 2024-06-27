@@ -5,7 +5,7 @@ import FooterAccordion from "./FooterAccardion";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#333] text-white px-[200px] py-[50px] gap-9 xl:flex justify-between hidden">
+      <div className="bg-[#333] text-white px-[100px] py-[50px] gap-9 xl:flex justify-between hidden">
         <div>
           <p>Savolingiz bormi? Qo'ng'iroq qiling</p>
           <h1 className="text-[25px]">+998 71 209 99 44</h1>

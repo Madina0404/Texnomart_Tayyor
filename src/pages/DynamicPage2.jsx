@@ -6,6 +6,9 @@ import { FreeMode, EffectFade, Navigation, Thumbs } from "swiper/modules";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
+
+
+
 const DynamicPage2 = () => {
   const [data, setData] = useState({});
   const { addData } = useContext(BasketContext);

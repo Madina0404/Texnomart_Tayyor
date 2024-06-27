@@ -19,6 +19,7 @@ import DynamicPage1 from '../pages/DynamicPage1';
 import Footer from '../components/Footer';
 import { Route,Routes } from 'react-router-dom';
 import DynamicPage2 from '../pages/DynamicPage2';
+import DynamicPage3 from '../pages/DynamicPage3';
 const PrivatePages = () => {
   return (
     <div className=" max-w-[1800px] mx-auto">
@@ -45,6 +46,7 @@ const PrivatePages = () => {
             />
             <Route path="/XitSavdo/:id" element={<DynamicPage1 />} />
             <Route path="/products/:id" element={<DynamicPage2 />} />
+            <Route path='/MuddatliTolov/:id' element={<DynamicPage3/>}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

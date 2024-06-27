@@ -11,7 +11,7 @@ const Registr = () => {
   const { like } = useContext(LikeContext);
   return (
     <div className="">
-      <div className="flex fixed bottom-0 w-[100%] 2xl:hidden gap-4 items-center left-0 px-[100px] py-2 bg-gray-500 justify-between">
+      <div className="flex fixed bottom-0 w-[100%] xl:hidden gap-4 items-center left-0 px-[100px] py-2 bg-gray-500 justify-between">
         <a href="/">
           <div className="flex flex-col items-center">
             <img
@@ -53,7 +53,7 @@ const Registr = () => {
 
       {/*  */}
 
-      <div className="2xl:flex  w-[100%] hidden gap-4 items-center  py-2  justify-between">
+      <div className="xl:flex  w-[100%] hidden gap-4 items-center  py-2  justify-between">
         <div className="logIn">
           <LoginButton />
         </div>

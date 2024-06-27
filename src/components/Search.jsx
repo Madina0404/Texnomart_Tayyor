@@ -21,8 +21,12 @@ const Search = () => {
   }
 
   return (
-    <div>
-      <div className="flex border relative px-2 border-yellow-500 w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[1000px] gap-[20px] rounded-xl">
+    <div style={{
+        position: 'relative',
+        top: 0, 
+        left: 0
+    }}>
+      <div className="flex border relative px-2 border-yellow-500 w-[300px] sm:w-[500px] lg:w-[700px] xl:w-[840px] gap-[20px] rounded-xl">
         <img width={20} src={searchIcon} alt="" />
         <input
           onChange={(e) => handleSearch(e.target.value)}
@@ -32,9 +36,9 @@ const Search = () => {
           className="outline-0 h-[50px]"
         />
         {input && (
-          <div className="fixed top-[90px] bg-white">
+          <div style={{ position: 'fixed', top: '90px', left: 500,  background: 'white' }} className=" w-[800px]">
             {searchResults.map((on) => (
-              <Link to={`/XitSavdo/${on.id}`} key={on.id}>
+              <Link to={`/Products/${on.id}`} key={on.id}>
                 <p className="border-b p-[5px] ">{on.title}</p>
               </Link>
             ))}
@@ -43,6 +47,7 @@ const Search = () => {
       </div>
     </div>
   );
+
 };
 
 export default Search;

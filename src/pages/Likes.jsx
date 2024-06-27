@@ -35,13 +35,13 @@ const Likes = () => {
           <hr />
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5 my-3">
             {like?.map((item) => (
-              <div key={item.id}>
+              <div key={item?.id}>
                 <div className="border p-2 border-gray-400 rounded-xl">
                   <div className="flex justify-between">
                     <p className="bg-green-500 px-2 rounded-md text-white">
                       0*0*12
                     </p>
-                    <div className=" cursor-pointer" onClick={() => removeLike(item.id)}>
+                    <div className=" cursor-pointer" onClick={() => removeLike(item?.id)}>
                       <img
                         style={{ width: "20px" }}
                         src="https://cdn3.iconfinder.com/data/icons/feather-5/24/x-512.png"
@@ -49,21 +49,21 @@ const Likes = () => {
                       />
                     </div>
                   </div>
-                  <Link to={`/XitSavdo/${item.id}`}>
+                  <Link to={`/XitSavdo/${item?.id}`}>
                     <div className=" h-[300px] overflow-hidden">
-                      <img className="object-cover h-[100%] w-[100%]" src={item.img} alt="" />
+                      <img className="object-cover h-[100%] w-[100%]" src={item?.img} alt="" />
                     </div>
-                    <p>{item.title}</p>
+                    <p>{item?.title}</p>
                     <button className="bg-gray-100 px-2 rounded-xl">
-                      {item.oy1} somdan/24 oy
+                      {item?.oy1} somdan/24 oy
                     </button>
                     <br />
                     <button className="bg-yellow-100 px-2 rounded-xl">
-                      {item.oy2} som 0*0*12
+                      {item?.oy2} som 0*0*12
                     </button>
                   </Link>
                   <div className=" flex justify-between items-center">
-                    <b>{item.price}</b>
+                    <b>{item?.price}</b>
                     <div onClick={() => addData(item)} className="w-[30px]">
                       <img
                         className=" border-2 cursor-pointer rounded-lg  border-yellow-400"

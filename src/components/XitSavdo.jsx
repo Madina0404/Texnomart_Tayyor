@@ -48,7 +48,7 @@ const XitSavdo = () => {
                       <p className="bg-green-500 px-2 rounded-md text-white">
                         0*0*12
                       </p>
-                      <div onClick={() => addLike(item)}>
+                      <div onClick={() => addLike(item.id)}>
                         <img
                           onClick={(e) => {
                             if (!Clicked) {
